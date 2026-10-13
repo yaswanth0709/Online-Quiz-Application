@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Quiz Application</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6f2ff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 60%;
+            margin: 30px auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        h2 {
+            color: #007bff;
+        }
+
+        .question {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            padding: 8px;
+            cursor: pointer;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .result {
+            margin-top: 20px;
+            color: green;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #007bff;
+            color: white;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Online Quiz Application</h1>
+    <p>Test Your Knowledge</p>
+</header>
+
+<div class="container">
+
+    <h2>Multiple Choice Quiz</h2>
+
+    <form>
+
+        <div class="question">
+            <p>1. What does HTML stand for?</p>
+            <label><input type="radio" name="q1">
+                Hyper Text Markup Language</label>
+            <label><input type="radio" name="q1">
+                High Text Machine Language</label>
+            <label><input type="radio" name="q1">
+                Home Tool Markup Language</label>
+        </div>
+
+        <div class="question">
+            <p>2. Which language is used to style web pages?</p>
+            <label><input type="radio" name="q2"> HTML</label>
+            <label><input type="radio" name="q2"> CSS</label>
+            <label><input type="radio" name="q2"> Python</label>
+        </div>
+
+        <div class="question">
+            <p>3. Which language adds interactivity to web pages?</p>
+            <label><input type="radio" name="q3">
+                JavaScript</label>
+            <label><input type="radio" name="q3"> CSS</label>
+            <label><input type="radio" name="q3"> SQL</label>
+        </div>
+
+        <div class="question">
+            <p>4. Which tag is used to create a hyperlink?</p>
+            <label><input type="radio" name="q4"> &lt;link&gt;</label>
+            <label><input type="radio" name="q4"> &lt;a&gt;</label>
+            <label><input type="radio" name="q4"> &lt;p&gt;</label>
+        </div>
+
+        <div class="question">
+            <p>5. Which tag is used to display an image?</p>
+            <label><input type="radio" name="q5"> &lt;img&gt;</label>
+            <label><input type="radio" name="q5"> &lt;image&gt;</label>
+            <label><input type="radio" name="q5"> &lt;picturetext&gt;</label>
+        </div>
+
+        <button type="button">Submit Quiz</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
+    <div class="result">
+        Your Score Will Appear Here
+    </div>
+
+</div>
+
+<footer>
+    <p>Online Quiz Application | HTML and CSS</p>
+</footer>
+
+</body>
+</html>
